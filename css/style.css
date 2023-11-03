@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Segoe TV';
+  src: url('SegoeTV.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Segoe TV', Segoe UI, Arial, sans-serif !important;
+}
+
+button {
+  padding: 10px 20px;
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-image-slice: 2 2 2 2;
+  border-image-repeat: stretch stretch;
+  border-image-source: url("../images/ButtonBorder.svg");
+  border-style: solid;
+  background-image: url("../images/ButtonBorder.svg");
+  background-position: -4px -4px;
+  font-family: 'Segoe TV', Segoe UI, Arial, sans-serif !important;
+}
+
+.kblist ol {
+  width: 320px;
+  margin-left: -2.5%;
+}
+
+.kblist li {
+  margin-bottom: 8px;
+}

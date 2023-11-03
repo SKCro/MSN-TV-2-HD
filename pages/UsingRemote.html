@@ -1,74 +1,67 @@
 <!DOCTYPE html>
 <html xmlns:msntv>
 <head>
-    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
-    <link rel="stylesheet" type="text/css" href="../css/Registration.css">
-    <script language="Javascript" src="msntv:/Javascript/TVShell.js"></script>
-    <script language="Javascript" src="msntv:/Javascript/ConnectionManager.js"></script>
-    <style>
-        body {
-            background-image: url(../images/usingkeybrdbg.jpg);
-            background-color: #23B3DF;
-			font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-        }
-        #main td {
-            padding-bottom: 9px;
-            padding-right: 5px;
-			padding-top: 20px;
-        }
+  <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+  <link rel="stylesheet" type="text/css" href="../css/Registration.css">
+  <script language="Javascript" src="msntv:/Javascript/TVShell.js"></script>
+  <script language="Javascript" src="msntv:/Javascript/ConnectionManager.js"></script>
+  <style>
+  body {
+    background-image: url(../images/usingkeybrdbg.jpg);
+    background-color: #23B3DF;
+  }
+  #main td {
+    padding-bottom: 9px;
+    padding-top: 10px;
+    }
 		
-		#title {
-			 top: 15px;
-		}
-		
-		#main {
-            padding-top: 40px;
-			
-        #redBall, #greenBall, #blueBall {
-            position: absolute;
-            height: 36px;
-            width: 36px;
-        }
-        #blueBall {
-            top: 255px;
-            left: 416px;
-        }
-        #greenBall {
-            top: 212px;
-            left: 459px;
-        }
-        #redBall {
-            top: 255px;
-            left: 501px;
-        }
-    </style>
+  #title {
+    top: 15px;
+  }
+
+  #main {
+    padding-top: 50px;
+  }
+  
+  #redBall, #greenBall, #blueBall {
+    content: '';
+    position: absolute;
+    height: 36px;
+    width: 36px;
+  }
+
+  #blueBall {
+    top: 255px;
+    left: 416px;
+  }
+
+  #greenBall {
+    top: 212px;
+    left: 459px;
+  }
+
+  #redBall {
+    top: 255px;
+    left: 501px;
+  }
+  </style>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body width="520" height="388">
-    <div id="title" style="margin-bottom: 400px;">Learning to use the keyboard</div>
-    <div id="main" style=font-family: "Segoe UI";>
-        <table width="75%" cellpadding="0" cellspacing="0">
-            <tr>
-                <td colspan="2">Follow these steps to practice using the<br> keyboard:</td>
-            </tr>
-            <tr>
-                <td valign="top">1.</td>
-                <td>Find the arrow keys on the keyboard.</td>
-            </tr>
-            <tr>
-                <td valign="top">2.</td>
-                <td>Find the yellow box on the screen. Use<br> the arrow keys on the keyboard to move<br> the yellow box around.</td>
-            </tr>
-            <tr>
-                <td valign="top">3.</td>
-                <td>When you're ready to go on, move the<br> yellow box to the <em>Continue</em> button at<br> the bottom of the screen, and then press<br> <em>Enter</em> on the keyboard.</td>
-            </tr>
-        </table>
-    </div>
-    <div id="greenBall" tabindex="0"></div>
-    <div id="redBall" tabindex="0"></div>
-    <div id="blueBall" tabindex="0"></div>
-    <div id="footer">
-        <msntv:CustomButton id="continue" label="Continue" href="ConnectionType.html" />
-    </div>
+  <div id="title" style="margin-bottom: 400px;">Learning to use the keyboard</div>
+  <div id="main" class=kblist>
+    <ol>
+      <li>Follow these steps to practice using the keyboard:</li>
+      <li>Find the arrow keys on the keyboard.</li>
+      <li>Find the yellow box on the screen. Use the arrow keys on the keyboard to move the yellow box around.</li>
+      <li>When you're ready to go on, move the yellow box to the <em>Continue</em> button at the bottom of the screen, and then press <em>Enter</em> on the keyboard.</li>
+    </ol>
+  </div>
+  <div id="greenBall" tabindex="0"></div>
+  <div id="redBall" tabindex="0"></div>
+  <div id="blueBall" tabindex="0"></div>
+  <div id="footer">
+    <button id="continue" href="ConnectionType.html">Continue</button>
+  </div>
 </body>
 </html>

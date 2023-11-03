@@ -1,5 +1,3 @@
-@import url(msntv:/Shared/CSS/Base.css);
-
 /* treatment of hyperlinks */
 A:link {text-decoration: none; color:#003471} 
 A:visited {text-decoration: none; color:#003471} 
@@ -7,19 +5,19 @@ A:hover {text-decoration: underline; color:#003471}
 A:active {text-decoration: none; color:#003471} 
 
 @font-face {
-    font-family: 'SegoeTV'; /* Font name */
-    src: local('Segoe TV'), local('SegoeTV'), url('SegoeTV.ttf') format('truetype');
-    /* Add other font formats (e.g., woff, woff2) as fallbacks as needed */
+  font-family: 'Segoe TV';
+  src: url('SegoeTV.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* body */
-body
-{
-	background-repeat: no-repeat;
-	margin: 0;
-	background-image: url(msntv:/Registration/images/bgimage.jpg);
-	overflow: hidden;
-        font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+body {
+    background-repeat: no-repeat;
+    margin: 0;
+    background-image: url(msntv:/Registration/images/bgimage.jpg);
+    overflow: hidden;
+    font-family: 'Segoe TV', Segoe UI, Tahoma, Arial, sans-serif;
 }
 
 p.example 
@@ -29,7 +27,6 @@ p.example
 
 td, body
 {
-	font-family: highway;
 	font-size: 18px;
 	color: #003471;
 	font-weight: normal;
@@ -49,12 +46,12 @@ table.fields td
 { padding: 15px 5px 0px 0px;}
 
 /* for tables using radio buttons */
-table.choices td
-{ padding: 5px 8px 0px 0px;}
+table.choices td {
+  padding: 5px 8px 0px 0px;
+}
 
 /* text at the top right of the page */
-#header
-{
+#header {
 	position: absolute;
 	top: 6.6%;
 	padding-bottom: 2%;
@@ -64,11 +61,10 @@ table.choices td
 }
 
 /* text at the top left of the page */
-#title
-{
+#title {
 	position: absolute;
-	top: 5.0%;
-	left: 5%;
+	top: 5%;
+	left: 4%;
 	padding-bottom: 2%;
 	color: #006cb1; 
 	font-size: 21px;
@@ -91,13 +87,12 @@ table.choices td
 }
 
 /* button */
-#footer
-{
+#footer {
 	position: absolute;
-	bottom: 4%;
-	right: 5%;	
-	width:320px;
-	text-align:right;
+	top: 48%;
+	left: 15%;	
+	width: 320px;
+	text-align: right;
 }
 
 /* used for the congratulations screen */
@@ -121,9 +116,6 @@ table.choices td
 	right: 15%;
 	padding-bottom: 2%;
 }
-
-
-                                                
 
 nobr
 {
